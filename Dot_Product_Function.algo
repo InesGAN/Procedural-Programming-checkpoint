@@ -1,0 +1,33 @@
+//SEcond Probleme 
+//Utilisant les Fonctions
+ALGORITHM Dot_Prod
+VAR
+  Product, ps, i:integer
+ VectB,vectA:array_name : ARRAY_OF integer[3];
+
+///////////////////////////////////
+FUNCTION DOT_Product(vectA,VectB) : Integer
+VAR
+    i:integer;
+BEGIN
+     Ps:=0;
+   FOR i FROM 0 TO vectA.length-1 
+       Ps:=Ps+vectA[i]*VectB[i];
+   END_FOR
+    RETURN Ps ;
+END 
+/////////////////////////////////////////
+BEGIN
+   Write("entrer n paires de vectors");
+ FOR j FROM 1 to n DO 
+   FOR i FROM 0 to vectA.length-1 Do 
+   Read(vectA[i])
+END_FOR
+   FOR i FROM 0 to vectB.length-1 Do 
+   Read(vectB[i])
+END_FOR
+ Write("le produit scalaire des deux vecteurs");
+ Product:=Dot_Prod(vectA,vectB);
+ If (Product=0) THEN Write("les deux vecteurs sont orthogonaux");
+END_FOR
+END
